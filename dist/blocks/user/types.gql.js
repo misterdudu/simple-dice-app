@@ -1,0 +1,9 @@
+"use strict";
+var __makeTemplateObject = (this && this.__makeTemplateObject) || function (cooked, raw) {
+    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
+    return cooked;
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var graphql_tag_1 = require("graphql-tag");
+exports.default = (0, graphql_tag_1.default)(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n    extend type Query {\n        getUser(id: Int): User\n        getUserList: UserList!\n        userServerSeed(id: String!): String\n    }\n\n    extend type Mutation {\n        register(name: String, password: String): User!\n        login(name: String!, password: String!): User!\n        logout: Boolean!\n    }\n\n    extend type Subscription {\n        userBalanceUpdated(userId: String!): UserBalance\n    }\n\n    type UserBalance {\n        userId: String\n        balance: Int\n    }\n\n    type UserList {\n        data: [User]\n        count: Int\n        page: Int\n        pageSize: Int\n    }\n\n    type User {\n        id: Int\n        name: String\n        balance: Float\n        password: String\n    }\n"], ["\n    extend type Query {\n        getUser(id: Int): User\n        getUserList: UserList!\n        userServerSeed(id: String!): String\n    }\n\n    extend type Mutation {\n        register(name: String, password: String): User!\n        login(name: String!, password: String!): User!\n        logout: Boolean!\n    }\n\n    extend type Subscription {\n        userBalanceUpdated(userId: String!): UserBalance\n    }\n\n    type UserBalance {\n        userId: String\n        balance: Int\n    }\n\n    type UserList {\n        data: [User]\n        count: Int\n        page: Int\n        pageSize: Int\n    }\n\n    type User {\n        id: Int\n        name: String\n        balance: Float\n        password: String\n    }\n"])));
+var templateObject_1;

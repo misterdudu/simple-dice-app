@@ -1,0 +1,50 @@
+{
+  "presets": [
+    "@babel/preset-env"
+  ],
+  "plugins": [
+    [
+      "babel-plugin-inline-import",
+      {
+        "extensions": [
+          ".json",
+          ".gql",
+          ".graphql"
+        ]
+      }
+    ],
+    [
+      "c",
+      {
+        "rootPathSuffix": "src"
+      }
+    ],
+    [
+      "@babel/plugin-proposal-decorators",
+      {
+        "legacy": true
+      }
+    ],
+    [
+      "@babel/plugin-proposal-optional-chaining",
+      {
+        "loose": true
+      }
+    ],
+    [
+      "@babel/plugin-proposal-nullish-coalescing-operator",
+      {
+        "loose": true
+      }
+    ],
+    [
+      "@babel/plugin-syntax-object-rest-spread"
+    ],
+    [
+      "@babel/plugin-transform-runtime",
+      {
+        "regenerator": true
+      }
+    ]
+  ]
+}
